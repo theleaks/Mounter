@@ -1,0 +1,1 @@
+--log-level INFO --log-file=./log.txt --max-backlog 20 --stats 1m --fast-list --vfs-read-chunk-size 16M  --vfs-cache-max-size  7000M --vfs-cache-mode minimal --no-modtime --drive-acknowledge-abuse --multi-thread-streams 10 --low-level-retries 2 --retries 2 --drive-chunk-size 1M  --buffer-size off --async-read
