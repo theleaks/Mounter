@@ -10,6 +10,10 @@ npm i
 --path Mounted directory.
 --time User change interval(min).
 ```
+# Flags (Options!)
+```
+--ftime User change first time(min)
+```
 # Run example
 ```
 node mounter --drive Gdrive --path /mnt0 --time 60

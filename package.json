@@ -1,12 +1,11 @@
 {
   "name": "mounter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "mounter.js",
   "scripts": {
-    "start": "node mounter.js",
-    "gdrive": "node mounter.js --drive=Gdrive --path=/disk1 --time=120"
+    "start": "node mounter.js"
   },
-  "author": "",
+  "author": "TheLeaks",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.2",
@@ -14,5 +13,13 @@
     "tree-kill": "^1.2.2"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "All users in the accounts folder and remount at the time interval you set.\r # Installation\r ```\r npm i\r ```\r # Flags (required!)\r ```\r --drive Rclone remote name.\r --path Mounted directory.\r --time User change interval(min).\r ```\r # Flags (Options!)\r ```\r --ftime User change first time(min)\r ```\r # Run example\r ```\r node mounter --drive Gdrive --path /mnt0 --time 60\r ```",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theleaks/Mounter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/theleaks/Mounter/issues"
+  },
+  "homepage": "https://github.com/theleaks/Mounter#readme"
 }
