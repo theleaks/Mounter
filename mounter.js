@@ -57,7 +57,7 @@ const mounter = (user) => {
         chalk.bold.yellowBright(`User${userNumber}: ${user} \n`)
     );
     setTimeout(() => {
-        userNumber < UserList.length ? userNumber++ : userNumber = 0;
+        userNumber < UserList.length - 1 ? userNumber++ : userNumber = 0;
         args.ftime = undefined;
         clean(exe2.pid)
         setTimeout(() => {
