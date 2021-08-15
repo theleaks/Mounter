@@ -16,7 +16,7 @@ Supports all Rclone commands.
 --path Mounted directory.
 --time User change interval(min).
 ```
-# Flags (Options!)
+# Flags (optional)
 ```
 --ftime User change first time(min)
 ```
