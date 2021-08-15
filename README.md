@@ -4,6 +4,12 @@ All users in the accounts folder and remount at the time interval you set.
 ```
 npm i
 ```
+
+# Rclone Flags (config.txt)
+```
+Supports all Rclone commands.
+```
+
 # Flags (required!)
 ```
 --drive Rclone remote name.
