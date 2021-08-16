@@ -28,11 +28,11 @@ const clean = (pid) => {
     })
 }
 
-const readConfig = () => {
+/* const readConfig = () => { //Not working!
     config = fs.readFileSync("./config.txt", 'utf8')
     console.log(chalk.bgBlue.bold("\n Parameter: ") + chalk.greenBright(config));
     return config;
-}
+} */
 console.log(
     chalk.green.blueBright.bold(`
 MM    MM                        tt                  
@@ -43,7 +43,7 @@ MM    MM  oooo   uuuu u nn   nn  tttt  eeeee rr
 `))
 const mounter = (user) => {
     const exe2 = exec(
-        `rclone mount "${args.drive}:" "${args.path}" ${readConfig()} --drive-service-account-file ./accounts/${user}`,
+        `rclone mount "${args.drive}:" "${args.path}"  --drive-service-account-file ./accounts/${user} `, // ${readConfig()} Not working!
         (error, stdout, stderr) => {
             if (error) {
                 console.log(chalk.red.bgWhite.bold(' Unmounted!'));
